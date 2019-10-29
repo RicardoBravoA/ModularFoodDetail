@@ -41,6 +41,7 @@ class DetailActivity : AppCompatActivity() {
                 tvAddress.text = detailModel.address
                 tvPhone.text = detailModel.phoneNumbers
                 tvSchedule.text = detailModel.timings
+
             }
 
             is DetailViewModel.UiViewModel.ShowError -> {
