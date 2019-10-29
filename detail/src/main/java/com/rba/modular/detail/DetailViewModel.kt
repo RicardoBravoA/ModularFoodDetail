@@ -2,15 +2,16 @@ package com.rba.modular.detail
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.rba.food.util.ScopedViewModel
-import com.rba.model.model.DetailModel
-import com.rba.model.model.ErrorModel
-import com.rba.util.domain.ResultType
+import com.rba.modular.detaild.domain.usecase.DetailUseCase
+import com.rba.modular.model.model.DetailModel
+import com.rba.modular.model.model.ErrorModel
+import com.rba.modular.util.ScopedViewModel
+import com.rba.modular.util.domain.ResultType
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class DetailViewModel(private val detailUseCase: com.rba.detail.domain.usecase.DetailUseCase) : ScopedViewModel() {
+class DetailViewModel(private val detailUseCase: DetailUseCase) : ScopedViewModel() {
 
     private val mutableModel = MutableLiveData<UiViewModel>()
     val model: LiveData<UiViewModel>
