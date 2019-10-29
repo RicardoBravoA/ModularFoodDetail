@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.rba.food.util.Constant
-import com.rba.food.util.snackbar
+import com.rba.modular.util.Constant
+import com.rba.modular.util.snackbar
 
 import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.content_detail.*
